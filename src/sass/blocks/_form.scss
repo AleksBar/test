@@ -65,6 +65,7 @@
         &__content {
             display: none;
             position: absolute;
+            width: 100%;
             left: 50%;
             transform: translateX(-50%);
             padding: 0;
@@ -110,6 +111,38 @@
             background: #fff;
             &:hover {
                 background: #F8F8F8;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .form {
+        &__wrapper {
+            width: 100%;
+            max-width: 320px;
+            padding: 0 20px;
+        }
+        &__input-box {
+            input, .form__dropdown__button {
+                padding: 16px 10px;
+            }
+            #inpt-phone {
+                width: 60%;
+            }
+        }
+        &__dropdown {
+            width: 35%;
+            &__button {
+                position: relative;
+                text-decoration: none;
+                color: $txt-color-b;
+                &:hover {
+                    color: $txt-color-b;
+                }
+                &::after {
+                    right: 8px;
+                }
             }
         }
     }
