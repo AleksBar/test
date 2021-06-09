@@ -1,0 +1,15 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'base/variables';
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1120px;
+    margin: 0  auto;
+}
+
+@import 'blocks/main';
+@import 'blocks/form';

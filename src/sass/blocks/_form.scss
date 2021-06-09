@@ -1,0 +1,116 @@
+.form {
+    &__wrapper {
+        width: 320px;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 12px;
+        text-transform: uppercase;
+        color: $txt-color-b;
+        span {
+            color: #428A60;
+        }
+    }
+    &__input-box {
+        position: relative;
+        input, .form__dropdown__button {
+            margin-top: 10px;
+            width: 100%;
+            height: 50px;
+            padding: 16px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            background: #F8F8F8;
+            border: 1px solid #E4E4E4;
+            border-radius: 5px;
+        }
+        input {
+            margin-bottom: 20px;
+            &::placeholder {
+                opacity: 0.2;
+            }
+        }
+        #inpt-phone {
+            width: 185px;
+            margin-bottom: 0;
+        }
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__button {
+        margin-top: 38px;
+        width: 100%;
+        height: 42px;
+        padding: 12px 0;
+        background-color: #428A60;
+        border-radius: 5px;
+        border: none;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        img {
+            margin-left: 10px;
+            width: 15px;
+            height: 10px;
+        }
+    }
+    &__dropdown {
+        width: 117px;
+        position: relative;
+        &__content {
+            display: none;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0;
+            border: 1px solid #E4E4E4;
+        }
+        &__button, &__item {
+            display: flex;
+            justify-content: start;
+            text-transform: uppercase;
+            list-style: none;
+            cursor: pointer;
+            img {
+                width: 26px;
+                height: 18px;
+                margin-left: 10px;
+            }
+        }
+        &__button {
+            position: relative;
+            text-decoration: none;
+            color: $txt-color-b;
+            &:hover {
+                color: $txt-color-b;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 10px;
+                height: 6px;
+                right: 19px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: url('../icons/dropdown_arrow.png') center (center/cover) no-repeat;
+            }
+        }
+
+        &__item {
+            height: 50px;
+            padding: 16px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            background: #fff;
+            &:hover {
+                background: #F8F8F8;
+            }
+        }
+    }
+}
